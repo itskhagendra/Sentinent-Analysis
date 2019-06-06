@@ -3,6 +3,7 @@ import re
 import pickle
 import pandas as pd
 
+import tensorflow as tf
 from keras.models import Sequential
 from keras.models import load_model
 from keras.preprocessing.text import Tokenizer
@@ -11,11 +12,19 @@ from keras.preprocessing.sequence import pad_sequences
 from keras.layers import Dense, Embedding, LSTM, SpatialDropout1D
 from sklearn.model_selection import train_test_split
 
-
+tf.logging.set_verbosity(tf.logging.ERROR)
 # Data Pre-Processing
+"""
 data = pd.read_csv('./Sentiment.csv')
 data = data[['text', 'sentiment']]
 data = data[data.sentiment != "Neutral"]
+
+"""
+#Modified Dataset
+data = pd.read_csv('../Dataset/tweets.csv', encoding='cp1252')
+data = data[['SentimentText', 'Sentiment']]
+data['Sentiment'] = data['Sentiment'].map({0: "Negative", 1: "Positive"})
+data.columns = ['text', 'sentiment']
 
 data['text'] = data['text'].apply(lambda z: z.lower())
 data['text'] = data['text'].apply(lambda z: re.sub('[^a-zA-Z0-9\s]', '', z))
@@ -41,7 +50,7 @@ print("Tokenizer Saved")
 # Training Parameters
 embed_dim = 128
 lstm_out = 196
-epoch = 50
+epoch = 2
 batch_size = 32
 validation_size = 1500
 
@@ -60,7 +69,7 @@ y = pd.get_dummies(data['sentiment']).values
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=42)
 
 # Training
-model.fit(x_train, y_train, epochs=epoch, batch_size=batch_size, verbose=0)
+model.fit(x_train, y_train, epochs=epoch, batch_size=batch_size, verbose=1)
 
 # Validation Set Generation
 x_validate = x_test[-validation_size:]
