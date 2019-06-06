@@ -92,6 +92,6 @@ model = load_model("Sentiment-negative_bias.h5")
 print("Model Loaded Successfully")
 twt = ['Meetings: Because none of us is as dumb as all of us.']
 twt = tokenizer.texts_to_sequences(twt)
-twt = pad_sequences(twt, maxlen=28, dtype='int32', value=0)
+twt = pad_sequences(twt, maxlen=40, dtype='int32', value=0)
 sentiment = model.predict(twt, batch_size=1, verbose=0)[0]
 print(sentiment)
