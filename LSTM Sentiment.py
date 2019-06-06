@@ -1,10 +1,13 @@
 # Required Modules
 import re
+import pickle
 import pandas as pd
 
+from keras.models import Sequential
+from keras.models import load_model
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
-from keras.models import Sequential
+
 from keras.layers import Dense, Embedding, LSTM, SpatialDropout1D
 from sklearn.model_selection import train_test_split
 
@@ -18,6 +21,7 @@ data['text'] = data['text'].apply(lambda z: z.lower())
 data['text'] = data['text'].apply(lambda z: re.sub('[^a-zA-Z0-9\s]', '', z))
 
 print(data[data['sentiment'] == 'Positive'].size)
+# print(data[data['sentiment'] == 'Neutral'].size)
 print(data[data['sentiment'] == "Negative"].size)
 
 for idx, row in data.iterrows():
@@ -29,6 +33,10 @@ tokenizer = Tokenizer(num_words=max_features, split=" ")
 tokenizer.fit_on_texts(data['text'].values)
 x = tokenizer.texts_to_sequences(data['text'].values)
 x = pad_sequences(x)
+
+with open('tokenizer.pickle', 'wb') as handle:
+    pickle.dump(tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
+print("Tokenizer Saved")
 
 # Training Parameters
 embed_dim = 128
@@ -52,7 +60,7 @@ y = pd.get_dummies(data['sentiment']).values
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=42)
 
 # Training
-model.fit(x_train, y_train, epochs=epoch, batch_size=batch_size, verbose=1)
+model.fit(x_train, y_train, epochs=epoch, batch_size=batch_size, verbose=0)
 
 # Validation Set Generation
 x_validate = x_test[-validation_size:]
@@ -61,7 +69,20 @@ x_test = x_test[:-validation_size]
 y_test = y_test[:-validation_size]
 
 # Model Validation
-score, acc = model.evaluate(x_test, y_test, verbose=1, batch_size=batch_size)
+score, acc = model.evaluate(x_test, y_test, batch_size=batch_size, verbose=1)
+if model.save("Sentiment-negative_bias.h5"):
+    print("Model Saved")
+
 
 print("Score:%.2f" % score)
 print("Accuracy:%.2f" % acc)
+
+
+
+model = load_model("Sentiment-negative_bias.h5")
+print("Model Loaded Successfully")
+twt = ['Meetings: Because none of us is as dumb as all of us.']
+twt = tokenizer.texts_to_sequences(twt)
+twt = pad_sequences(twt, maxlen=28, dtype='int32', value=0)
+sentiment = model.predict(twt, batch_size=1, verbose=0)[0]
+print(sentiment)
