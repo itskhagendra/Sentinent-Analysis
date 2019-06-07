@@ -10,23 +10,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LSTM Sentiment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="204">
+              <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#25#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+            <state relative-caret-position="153">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -43,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="479">
+              <first_editor relative-caret-position="1020">
                 <caret line="60" column="48" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
               </first_editor>
               <second_editor />
@@ -54,11 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pandastut.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
+            <state relative-caret-position="221">
               <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-              <folding>
-                <element signature="e#1#10#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -74,9 +71,7 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Failed Attempts/sentimentanalysis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2397" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -113,8 +108,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pandas.py" />
         <option value="$PROJECT_DIR$/pandastut.py" />
-        <option value="$PROJECT_DIR$/LSTM Sentiment.py" />
         <option value="$PROJECT_DIR$/demo_test.py" />
+        <option value="$PROJECT_DIR$/LSTM Sentiment.py" />
       </list>
     </option>
   </component>
@@ -161,7 +156,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.demo_test">
+  <component name="RunManager" selected="Python.LSTM Sentiment">
     <configuration name="LSTM Sentiment" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Sentinent Analysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -269,9 +264,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.LSTM Sentiment" />
         <item itemvalue="Python.demo_test" />
         <item itemvalue="Python.pandastut" />
-        <item itemvalue="Python.LSTM Sentiment" />
         <item itemvalue="Python.pandas" />
         <item itemvalue="Python.train (1)" />
       </list>
@@ -294,12 +289,12 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17038691" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3474962" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32405892" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32405892" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -314,76 +309,28 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sentimentanalysis2.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file_encoding.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sentimentanalysis4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="82" column="30" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sentimentanalysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510">
-          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-          <folding>
-            <element signature="e#20#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sentimentanalysis2.py" />
+    <entry file="file://$PROJECT_DIR$/file_encoding.py" />
+    <entry file="file://$PROJECT_DIR$/sentimentanalysis4.py" />
+    <entry file="file://$PROJECT_DIR$/sentimentanalysis.py" />
+    <entry file="file://$PROJECT_DIR$/modules.py" />
+    <entry file="file://$PROJECT_DIR$/train.py" />
+    <entry file="file://$PROJECT_DIR$/api.html" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="479">
+          <first_editor relative-caret-position="1020">
             <caret line="60" column="48" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Failed Attempts/modules.py">
+    <entry file="file://$PROJECT_DIR$/pandastut.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" column="55" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="55" />
+        <state relative-caret-position="221">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Failed Attempts/sentimentanalysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2397" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Failed Attempts/file_encoding.py">
@@ -393,32 +340,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pandastut.py">
+    <entry file="file://$PROJECT_DIR$/Failed Attempts/sentimentanalysis.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Failed Attempts/modules.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+        <state relative-caret-position="204">
+          <caret line="21" column="55" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
           <folding>
-            <element signature="e#1#10#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LSTM Sentiment.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo_test.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#25#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
