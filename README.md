@@ -19,8 +19,11 @@ and re-tweets and tags inside of tweets provide discourse information.
 
 ## Tools Used
 - Keras
+- Keras Pre-Processing
 - Sklean
 - Pickle
+- Pandas
+- Numpy
 
 # How to use this 
 
@@ -53,7 +56,7 @@ and re-tweets and tags inside of tweets provide discourse information.
     `twt = tokenizer.texts_to_sequences(twt)`
     
 7. Add appropriate padding 
-    `twt = pad_sequences(twt, maxlen=28, dtype='int32', value=0)`
+    `twt = pad_sequences(twt, maxlen=40, dtype='int32', value=0)`
 8. predict the results 
     `sentiment = model.predict(twt, batch_size=1, verbose=0)[0]`
     
