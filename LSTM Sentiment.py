@@ -12,7 +12,7 @@ from keras.preprocessing.sequence import pad_sequences
 from keras.layers import Dense, Embedding, LSTM, SpatialDropout1D
 from sklearn.model_selection import train_test_split
 
-tf.logging.set_verbosity(tf.logging.ERROR)
+
 # Data Pre-Processing
 """
 data = pd.read_csv('./Sentiment.csv')
