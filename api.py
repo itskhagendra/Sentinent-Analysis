@@ -40,8 +40,8 @@ def prediction(temp):
     elif np.argmax(sentiment) == 1:
         final_sentiment = 'positive'
     result = {
-        "positive_confidande": str(sentiment[1]),
-        "negative_confidance": str(sentiment[0]),
+        "positive_confidence": str(sentiment[1]),
+        "negative_confidence": str(sentiment[0]),
         'sentiment': str(final_sentiment)
     }
     return result
