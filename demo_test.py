@@ -21,6 +21,7 @@ twt = [txt]
 twt = tokenizer.texts_to_sequences(twt)
 twt = pad_sequences(twt, maxlen=40, dtype='int32', value=0)
 sentiment = model.predict(twt, batch_size=1, verbose=0)[0]
+print(model.predict(twt, batch_size=1, verbose=0)[0])
 print("Negative", sentiment[0])
 print("Positive", sentiment[1])
 
